@@ -1,180 +1,119 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body
-{
 
-    background-image:url(images/daniele-levis-pelusi-AqgHZajV-IU-unsplash.jpg); 
-    background-size:     cover;                  
-    background-repeat:   no-repeat;
-    background-position: center center;
+body {
+  background-image: url(images/daniele-levis-pelusi-AqgHZajV-IU-unsplash.jpg);
+  background-size: cover;                  
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 h1 {
   text-align: center;
-  background-color:black;
+  background-color: black;
   color: #ffffff;
   padding: 2%;
-  font-family:'Montserrat','sans-serif';
-  box-shadow: 5px 5px 5px 2px pink;
-  text-shadow: 5px 5px 5px #000000;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-style: italic;
-
+  box-shadow: 5px 5px 5px 2px pink;
+  text-shadow: 5px 5px 5px #000000;
 }
 
-img{
-  flex-shrink:0;
-    -webkit-flex-shrink: 0;
-    max-width:100%;
-    max-height:100%;
-
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
-.parent{
+
+.parent {
   width: 25%;
   height: 50%;
 }
 
-.box1{
-display:inline-block;
-margin-right: 5%;
-
+.box1, .box2 {
+  display: inline-block;
 }
 
-.box2{
-  display:inline-block;
-
-  border-left: 2%;
-
+#form {
+  width: 50%;
+  margin: 150px auto;
+  padding: 20px;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px -1px rgba(0, 4, 4, .32), 
+              0 4px 5px 0 rgba(0, 0, 0, .32), 
+              0 1px 10px 0 rgba(0, 0, 0, .32);
 }
-#form
-{
-    width: 50%;
-    background-color: #ff00ff;
-    margin:150px auto;
-    padding: 20px 20px ;
-    /*box-shadow: 2px 2px 14px -1px rgba(0,0,0,0.75);*/
-    box-shadow: 0 2px 4px -1px rgba(0,4,4,.32), 0 4px 5px 0 rgba(0,0,0,.32), 0 1px 10px 0 rgba(0,0,0,.32);
-    background-color:black;
-    border-radius: 5px;
 
-
-}
-.show{
+.show {
   border: 2px solid red;
   width: 50%;
-  margin: 0 auto;
-  margin-top: -50px;
-  padding: 20px 10px ;
+  margin: -50px auto 20px;
+  padding: 20px 10px;
   border-radius: 10px;
-  box-shadow: 2px 2px 14px -1px rgba(0,0,0,0.75);
-  background-image: linear-gradient(#ff00ff,red);
+  background-image: linear-gradient(#ff00ff, red);
+  box-shadow: 2px 2px 14px -1px rgba(0, 0, 0, 0.75);
   display: none;
-  margin-bottom: 20px;
 }
-.show ul{
+
+.show ul {
   list-style-type: none;
 }
-.show li{
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+.show li {
+  margin: 20px 0;
 }
 
-.showd{
+.showd {
   display: block;
-
-}
-form
-{
-    display: inline-block;
-    border-left:2%;
-
-
 }
 
-
-form div
-{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-input[type="text"],select
-{
-    width: 80%;
-    height: 30px;
-}
-textarea
-{
-    width: 80%;
-}
-input,select,textarea
-{
-   margin-bottom: 10px;
-   border: 0px;
-   padding: 0 10px;
-   border-radius: 3px;
-
+form {
+  display: inline-block;
 }
 
-.fontcolor{
-  color:white;
+form div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#text-area
-{
-    align-items: flex-start;
+input[type="text"], select, textarea {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 3px;
 }
-input[type="submit"]
-{
-   width: 80px;
-   height: 30px;
-   background-color: rgb(32, 226, 32);
-   color: white;
-   cursor: pointer;
+
+textarea {
+  width: 80%;
 }
-input:focus,select:focus,textarea:focus
-{
-    border-bottom: 3px solid powderblue;
+
+input[type="submit"] {
+  width: 80px;
+  height: 30px;
+  background-color: rgb(32, 226, 32);
+  color: white;
+  cursor: pointer;
 }
+
+input:focus, select:focus, textarea:focus {
+  border-bottom: 3px solid powderblue;
+}
+
 .page-footer {
-  background-color:black;
+  background-color: black;
   text-align: center;
   color: #ffffff;
   padding: 1px;
   border-radius: 10px;
 }
-.footer-copyright a {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #000000;
-  border-radius: 2px;
-  padding: 2px;
-}
-.btn {
-  margin-right: -100px;
-}
-.btn:hover{
-	transition: all .2s ease-out;
-	filter:hue-rotate(-47deg);
-	transform: scale(1.1);
-  overflow: hidden;
-}
-.btn input {
-  background-color: rgb(68, 23, 110);
-  font-size: 100%;
-}
-@media (max-width: 570px) {
-   
-   #form{
-     width: 80vw;
-   }
-   .show{
-     width: 80vw;
-   }
- }
+
+.foote
