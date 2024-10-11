@@ -7,22 +7,19 @@
 }
 
 body {
-  background-image: url(images/daniele-levis-pelusi-AqgHZajV-IU-unsplash.jpg);
-  background-size: cover;                  
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url(images/daniele-levis-pelusi-AqgHZajV-IU-unsplash.jpg) center/cover no-repeat;
 }
 
 h1 {
   text-align: center;
   background-color: black;
-  color: #ffffff;
+  color: #fff;
   padding: 2%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-style: italic;
   box-shadow: 5px 5px 5px 2px pink;
-  text-shadow: 5px 5px 5px #000000;
+  text-shadow: 5px 5px 5px #000;
 }
 
 img {
@@ -45,24 +42,24 @@ img {
   padding: 20px;
   background-color: black;
   border-radius: 5px;
-  box-shadow: 0 2px 4px -1px rgba(0, 4, 4, .32), 
-              0 4px 5px 0 rgba(0, 0, 0, .32), 
-              0 1px 10px 0 rgba(0, 0, 0, .32);
+  box-shadow: 0 2px 4px -1px rgba(0, 4, 4, 0.32), 
+              0 4px 5px 0 rgba(0, 0, 0, 0.32), 
+              0 1px 10px 0 rgba(0, 0, 0, 0.32);
 }
 
 .show {
+  display: none;
   border: 2px solid red;
   width: 50%;
   margin: -50px auto 20px;
   padding: 20px 10px;
   border-radius: 10px;
-  background-image: linear-gradient(#ff00ff, red);
+  background: linear-gradient(#ff00ff, red);
   box-shadow: 2px 2px 14px -1px rgba(0, 0, 0, 0.75);
-  display: none;
 }
 
 .show ul {
-  list-style-type: none;
+  list-style: none;
 }
 
 .show li {
@@ -111,9 +108,7 @@ input:focus, select:focus, textarea:focus {
 .page-footer {
   background-color: black;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   padding: 1px;
   border-radius: 10px;
 }
-
-.foote
